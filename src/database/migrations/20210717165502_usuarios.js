@@ -1,3 +1,7 @@
+// knex migrate:make nomeMigration
+// knex migrate:up or latest (ultima criada)
+// knex migrate:rollback
+
 exports.up = function (knex) {
     return knex.schema.createTable('usuarios', function (table) {
         table.increments();
